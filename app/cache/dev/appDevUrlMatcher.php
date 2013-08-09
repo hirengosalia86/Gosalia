@@ -133,6 +133,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        // sm_login
+        if ($pathinfo === '/login') {
+            return array (  '_controller' => 'SM\\LoginBundle\\Controller\\LoginController::indexAction',  '_route' => 'sm_login',);
+        }
+
         // _welcome
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

@@ -1,0 +1,7 @@
+sm_login_homepage:
+    pattern:  /login
+    defaults: { _controller: SMLoginBundle:Default:index }
+    
+sm_login:
+    pattern: /login
+    defaults: {_controller: SMLoginBundle:Login:index }

@@ -1,0 +1,4 @@
+sm_login:
+    resource: "@SMLoginBundle/Resources/config/routing.yml"
+    prefix:   /
+
